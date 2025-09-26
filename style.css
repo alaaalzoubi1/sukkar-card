@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(135deg, #f9e4c6, #A3C585);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#card {
+  background: #f9e4c6;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 90%;
+  max-width: 500px;
+  border: 3px solid #A3C585;
+}
+
+.logo-section {
+  position: relative;
+}
+.card-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  background-color: #A3C585;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.6s ease forwards;
+}
+
+.btn:hover {
+  background-color: #7a9b62;
+}
+
+/* Sequential animation */
+.buttons .btn:nth-child(1) { animation-delay: 0.2s; }
+.buttons .btn:nth-child(2) { animation-delay: 0.4s; }
+.buttons .btn:nth-child(3) { animation-delay: 0.6s; }
+.buttons .btn:nth-child(4) { animation-delay: 0.8s; }
+.buttons .btn:nth-child(5) { animation-delay: 1s; }
+.buttons .btn:nth-child(6) { animation-delay: 1.2s; }
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
