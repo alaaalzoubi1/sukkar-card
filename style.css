@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Cairo', sans-serif;
-  background: linear-gradient(135deg, #f9e4c6, #A3C585);
+  background: linear-gradient(135deg, #f5e6cc, #5b7fa4); /* بيج فاتح إلى أزرق أنيق */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,13 +9,13 @@ body {
 }
 
 #card {
-  background: #f9e4c6;
+  background: #f5e6cc; /* بيج رملي */
   border-radius: 20px;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.15);
   overflow: hidden;
   width: 90%;
   max-width: 500px;
-  border: 3px solid #A3C585;
+  border: 3px solid #5b7fa4; /* أزرق غامق */
 }
 
 .logo-section {
@@ -26,7 +26,6 @@ body {
   height: auto;
   display: block;
 }
-
 
 .buttons {
   display: flex;
@@ -46,7 +45,7 @@ body {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
-  background-color: #A3C585;
+  background-color: #5b7fa4; /* الأزرق الأساسي */
   transition: 0.3s;
   opacity: 0;
   transform: translateY(20px);
@@ -54,7 +53,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #7a9b62;
+  background-color: #3d5e7d; /* أزرق أغمق قليلاً عند التمرير */
 }
 
 /* Sequential animation */
